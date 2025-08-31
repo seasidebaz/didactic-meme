@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterWebApi", "MeterWebApi\MeterWebApi.csproj", "{CCEB7AF5-FFB9-48AD-B71F-AF667DFFBE71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterWebApi.Tests", "MeterWebApi.Tests\MeterWebApi.Tests.csproj", "{82CA992A-88C7-4F3B-BEE2-1660DDAF3AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{F9B0B7C7-7267-4C13-8B2A-840BB8FEAB2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCEB7AF5-FFB9-48AD-B71F-AF667DFFBE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEB7AF5-FFB9-48AD-B71F-AF667DFFBE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEB7AF5-FFB9-48AD-B71F-AF667DFFBE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEB7AF5-FFB9-48AD-B71F-AF667DFFBE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82CA992A-88C7-4F3B-BEE2-1660DDAF3AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82CA992A-88C7-4F3B-BEE2-1660DDAF3AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82CA992A-88C7-4F3B-BEE2-1660DDAF3AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82CA992A-88C7-4F3B-BEE2-1660DDAF3AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B0B7C7-7267-4C13-8B2A-840BB8FEAB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B0B7C7-7267-4C13-8B2A-840BB8FEAB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B0B7C7-7267-4C13-8B2A-840BB8FEAB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B0B7C7-7267-4C13-8B2A-840BB8FEAB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
