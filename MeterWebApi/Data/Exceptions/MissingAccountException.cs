@@ -1,6 +1,3 @@
 namespace Data.Exceptions;
 
-public class MissingAccountException : Exception
-{
-    
-}
+public class MissingAccountException(int accountId) : Exception($"Account {accountId} does not exist");

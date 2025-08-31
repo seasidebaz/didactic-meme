@@ -13,6 +13,8 @@ builder.Services.AddControllers();
 // Configure database
 builder.Services.AddDb(builder.Configuration.GetConnectionString("Default"));
 
+builder.Services.AddLogging();
+
 // Register DI middleware
 builder.Services.AddScoped<IRepository, Repository>();
 builder.Services.AddScoped<IReadingInterface, ReadingInterface>();

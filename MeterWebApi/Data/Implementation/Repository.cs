@@ -7,12 +7,7 @@ namespace Data.Implementation;
 
 public class Repository(MeterContext context) : IRepository
 {
-    public void Add(MeterRead meterRead)
-    {
-        Task.Run(async () => await AddAsync(meterRead));
-    }
-
-    public async Task AddAsync(MeterRead meterRead)
+    public async Task RecordMeterReadAsync(MeterRead meterRead)
     {
         await context.AddAsync(meterRead);
         await context.SaveChangesAsync();
@@ -27,5 +22,13 @@ public class Repository(MeterContext context) : IRepository
     {
         return (await context.MeterReads.FirstOrDefaultAsync(x =>
             x.AccountId == accountId && x.MeterReadingDateTime == readingDate))!;
+    }
+
+    public async Task<DateTime> GetLastReadingDateAsync(int accountId)
+    {
+        return await context.MeterReads.Where(x => x.AccountId == accountId)
+            .OrderByDescending(x => x.MeterReadingDateTime)
+            .Select(x => x.MeterReadingDateTime)
+            .FirstOrDefaultAsync();
     }
 }
